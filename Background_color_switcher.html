@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background_color_switcher</title>
+</head>
+
+<style>
+    * {
+        padding: 1cqmin;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+    .button {
+        height: 200px;
+        width: 160px;
+        border: 1px solid;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    #grey {
+        background-color: grey;
+    }
+
+    #purple {
+        background-color: purple;
+
+    }
+
+    #blue {
+        background-color: blue;
+
+    }
+
+    #yellow {
+        background-color: yellow;
+
+    }
+</style>
+
+<body>
+
+
+    <h1> Color scheme Switcher</h1>
+
+
+    <div class="container">
+        <div class="button" id="grey"></div>
+        <div class="button" id="purple"></div>
+        <div class="button" id="blue"></div>
+        <div class="button" id="yellow"></div>
+    </div>
+
+
+    <h2> try clicking on one of the colors above
+        <span> to change the background color of this page</span>
+    </h2>
+
+
+</body>
+
+<script>
+
+    const buttons = document.querySelectorAll('.button');
+    const body = document.querySelector('body');
+
+    buttons.forEach(function (button) {
+
+        button.addEventListener('click', function(e)
+    {
+        // // console.log(e);       
+        // console.log(e.target);
+
+        if(e.target.id == 'grey')
+        {
+            body.style.backgroundColor = e.target.id;
+        }
+
+        if(e.target.id == 'purple')
+        {
+            body.style.backgroundColor =e.target.id;
+        }
+
+        if(e.target.id == 'blue')
+        {
+            body.style.backgroundColor = e.target.id;
+        }
+
+        if(e.target.id == 'yellow')
+        {
+            body.style.backgroundColor = e.target.id;
+        }
+
+    })
+    })
+</script>
+
+</html>
